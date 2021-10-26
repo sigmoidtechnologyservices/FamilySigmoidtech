@@ -1,0 +1,69 @@
+<resources>
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/oceanblue</item>
+		<item name="colorPrimaryDark">@color/oceanblue2</item>
+		<item name="colorAccent">@color/evidenzia</item>
+		<item name="android:textAppearanceSmall">@style/AppTheme.BasicText</item> <!-- Textviews -->
+		<item name="android:textAppearance">@style/AppTheme.BasicText</item> <!-- Radio buttons, switches, checkboxes -->
+		<item name="android:itemTextAppearance">@style/AppTheme.BasicText</item> <!-- Popup, options menu items -->
+		<item name="textAppearancePopupMenuHeader">@style/AppTheme.LittleTitle</item>
+	</style>
+
+	<style name="AppTheme.BasicText">
+		<item name="android:textColor">#000</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+
+	<style name="AppTheme.Title">
+		<item name="android:textColor">@color/grayText</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<style name="AppTheme.LittleTitle">
+		<item name="android:textColor">@color/grayText</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="AppTheme.Suggestion">
+		<item name="android:textColor">#444</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+
+	<style name="AppTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+	<style name="TintaBianca" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+		<item name="android:tint">@android:color/white</item>
+	</style>
+
+	<style name="Ruota" parent="AppTheme">
+		<item name="android:layout_height">100dp</item>
+		<item name="android:background">@drawable/ruota_sfondo</item>
+		<item name="android:descendantFocusability">blocksDescendants</item>
+	</style>
+
+	<style name="AppTheme.BottoneColorato" parent="Widget.AppCompat.Button.Colored">
+		<item name="android:textColor">#FFF</item>
+	</style>
+	<style name="AppTheme.BottoneNormale" parent="AppTheme.BottoneColorato">
+		<item name="android:backgroundTint">@color/primarioChiaro</item>
+	</style>
+
+	<attr name="spouseColor" format="reference|color"/>
+	<attr name="linesColor" format="reference|color"/>
+	<style name="diagramScreen" parent="AppTheme">
+		<item name="spouseColor">@color/consorteSchermo</item>
+		<item name="linesColor">@color/lineeDiagrammaSchermo</item>
+	</style>
+	<style name="diagramPrint" parent="AppTheme">
+		<item name="spouseColor">@color/consorteStampa</item>
+		<item name="linesColor">@color/lineeDiagrammaStampa</item>
+	</style>
+
+</resources>

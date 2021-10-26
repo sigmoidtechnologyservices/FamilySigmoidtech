@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="app.family.family.Register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <EditText
+        android:id="@+id/Rfname"
+        android:background="@drawable/inputdeco"
+        android:gravity="center"
+       android:textColorHint="@color/oceanblue"
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Enter your first name"
+
+        />
+    <EditText
+        android:id="@+id/Rsname"
+        android:background="@drawable/inputdeco"
+        android:gravity="center"
+        android:textColorHint="@color/oceanblue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Enter your second name"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your gender"
+        android:textSize="18sp"
+        android:layout_marginStart="21dp"
+        android:textColor="@color/oceanblue"
+
+        />
+    <Spinner
+
+        android:id="@+id/Rgender"
+
+        android:layout_margin="15dp"
+
+
+
+        android:background="@drawable/inputdeco"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="center"
+           android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Choose your Date of Birth"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/inputdeco"
+        android:layout_margin="15dp"
+        android:textColor="@color/oceanblue"
+
+        />
+    <EditText
+        android:id="@+id/Remail"
+        android:background="@drawable/inputdeco"
+        android:gravity="center"
+        android:textColorHint="@color/oceanblue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+
+
+        />
+
+    <EditText
+        android:id="@+id/Rphone"
+        android:background="@drawable/inputdeco"
+        android:gravity="center"
+        android:textColorHint="@color/oceanblue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+
+        />
+    <EditText
+        android:id="@+id/Rpaswd"
+        android:inputType="textPassword"
+        android:background="@drawable/inputdeco"
+        android:gravity="center"
+        android:textColorHint="@color/oceanblue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Enter your password"
+
+        />
+    <EditText
+        android:id="@+id/Cpaswd"
+        android:inputType="textPassword"
+        android:background="@drawable/inputdeco"
+        android:gravity="center"
+        android:textColorHint="@color/oceanblue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Confirm your password"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:id="@+id/reg"
+        android:layout_margin="15dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:background="@drawable/buttondeco"
+
+        />
+
+    </LinearLayout>
+</ScrollView>

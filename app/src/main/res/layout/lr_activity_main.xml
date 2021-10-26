@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context="app.family.family.MainActivity1">
+
+    <EditText
+        android:id="@+id/searchid"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/search_deco"
+        android:backgroundTint="@color/oceanblue"
+        android:drawableStart="@drawable/search_icon"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:hint="Search"
+
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+
+
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_below="@id/searchid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/mainmenu"
+        android:background="@color/white"
+        app:itemRippleColor="@color/oceanblue2"
+        app:itemIconTint="@color/oceanblue"
+        app:itemTextColor="@color/oceanblue2"
+        android:id="@+id/bottomnav"
+
+
+        />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+
+
+
+</RelativeLayout>

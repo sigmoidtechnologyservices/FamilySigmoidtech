@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:gravity="center"
+    tools:context=".family.Login">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to your account"
+        android:textSize="32dp"
+
+        android:textColor="@color/oceanblue"
+
+        />
+    <EditText
+        android:id="@+id/lphoneno"
+        android:gravity="center"
+        android:textColorHint="@color/oceanblue2"
+
+        android:background="@drawable/inputdeco"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="Enter your phone number"
+
+        />
+    <EditText
+        android:id="@+id/lpass"
+        android:textColorHint="@color/oceanblue2"
+
+        android:background="@drawable/inputdeco"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:inputType="textPassword"
+        android:hint="Enter your password"
+        android:gravity="center"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:startIconDrawable="@drawable/key"
+        android:hint="Enter password"
+       app:passwordToggleEnabled="true"
+        android:visibility="gone"
+        android:background="@drawable/inputdeco"
+
+
+
+
+
+
+
+        >
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="15dp"
+        android:text="Login"
+        android:background="@drawable/buttondeco"
+        android:id="@+id/loginbtn"
+        android:textColor="@color/white"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont have an account?Create one."
+        android:textSize="15dp"
+        android:id="@+id/createAcc"
+
+        android:textColor="@color/oceanblue"
+
+        />
+
+
+</LinearLayout>

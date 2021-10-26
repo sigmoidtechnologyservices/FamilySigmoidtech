@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="primario">#960f3e</color>
+	<color name="primarioScuro">#720426</color>
+	<color name="primarioChiaro">#be4265</color>
+	<color name="evidenzia">#E99725</color>
+	<color name="evidenziaChiaro">#FFE6AA</color>
+	<color name="icon">#ffc42f</color>
+	<color name="grayText">#777</color>
+	<color name="maschio">#44AAff</color>
+	<color name="femmina">#ff66dd</color>
+	<color name="consorteSchermo">#cccccc</color>
+	<color name="consorteStampa">#e6e6e6</color>
+	<color name="lineeDiagrammaSchermo">#ffffff</color>
+	<color name="lineeDiagrammaStampa">#666666</color>
+	<color name="source">#ffcc66</color>
+	<color name="citazioneFonte">#ffeeaa</color>
+	<color name="archivio">#aa9988</color>
+	<color name="archivioCitazione">#ddccbb</color>
+
+	<color name="purple_200">#FFBB86FC</color>
+	<color name="purple_500">#FF6200EE</color>
+	<color name="purple_700">#FF3700B3</color>
+	<color name="teal_200">#FF03DAC5</color>
+	<color name="teal_700">#FF018786</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="oceanblue">#3BB5EC</color>
+	<color name="oceanblue2">#1C86B6</color>
+	<color name="loceanblue">#75AFC8</color>
+	<color name="colorBackground">#EEE9E9</color>
+
+	<color name="textColor">#055287</color>
+
+	<color name="LineColor1">#E57373</color>
+
+	<color name="LineColor2">#F06292</color>
+
+	<color name="RedColor2">#F1286C</color>
+
+	<color name="percentColor">#80055287</color>
+</resources>

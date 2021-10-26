@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/home_icon"
+
+        />
+    <item
+        android:id="@+id/noti"
+        android:title="tree"
+        android:icon="@drawable/network"
+
+        />
+    <item
+        android:id="@+id/comm"
+        android:title="Communication"
+        android:icon="@drawable/comm_icon"
+
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="profile"
+        android:icon="@drawable/profile_icon"
+
+        />
+    <item
+        android:id="@+id/drawer"
+        android:title="drawer"
+        android:icon="@drawable/drawer_icon"
+
+        />
+
+
+</menu>

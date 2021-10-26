@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:installLocation="auto"
+	package="app.family">
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="22"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+	<application
+		android:label="@string/app_name"
+		android:name="app.family.Global"
+		android:icon="@mipmap/icon"
+		android:theme="@style/AppTheme"
+		android:allowBackup="true"
+		android:usesCleartextTraffic="true"
+		android:requestLegacyExternalStorage="true"
+		android:supportsRtl="false"
+		tools:replace="android:supportsRtl">
+		<provider
+			android:name="androidx.core.content.FileProvider"
+			android:authorities="${applicationId}.provider"
+			android:grantUriPermissions="true"
+			android:exported="false">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/provider_paths"/>
+		</provider>
+		<activity
+			android:name="app.family.Facade"
+			android:noHistory="true" >
+<!--			<intent-filter>-->
+<!--				<action android:name="android.intent.action.MAIN" />-->
+<!--				<category android:name="android.intent.category.LAUNCHER" />-->
+<!--			</intent-filter>-->
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:scheme="https"
+					android:host="www.familygem.app"
+					android:path="/share.php" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:scheme="https"
+					android:host="www.familygem.app"
+					android:pathPattern="/condivisi/.*.zip" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="app.family.Trees"
+			android:launchMode="singleTask" />
+		<activity
+			android:name="app.family.TreeNew"
+			android:label="@string/new_tree"
+			android:parentActivityName="app.family.Trees" />
+		<activity
+			android:name="app.family.Principal"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name="app.family.Options"
+			android:label="@string/settings"
+			android:parentActivityName="app.family.Trees" />
+		<activity
+			android:name="app.family.Tombstone"
+			android:label="@string/about"
+			android:parentActivityName="app.family.Options" />
+		<activity
+			android:name="app.family.InfoTree"
+			android:label="@string/tree_info"
+			android:parentActivityName="app.family.Trees" />
+		<activity
+			android:name="app.family.FoldersMedia"
+			android:label="@string/media_folders" />
+		<activity
+			android:name="app.family.Sharing"
+			android:label="@string/share_tree"
+			android:parentActivityName="app.family.Trees" />
+		<activity
+			android:name="app.family.Compare"
+			android:label="@string/tree_with_news"
+			android:parentActivityName="app.family.Trees" />
+		<activity
+			android:name="app.family.Comparator"
+			android:label="@string/import_news"
+			android:parentActivityName="app.family.Compare" />
+		<activity
+			android:name="app.family.Confirmation"
+			android:label="@string/confirm_news"
+			android:parentActivityName="app.family.Compare" />
+		<activity
+			android:name="app.family.DiagramSettings"
+			android:label="@string/diagram_settings"
+			android:parentActivityName="app.family.Principal" />
+		<activity
+			android:name="app.family.Individual"
+			android:theme="@style/AppTheme.NoActionBar" />
+		<activity
+			android:name="app.family.detail.Family" />
+		<activity
+			android:name="app.family.detail.Nome" />
+		<activity
+			android:name="app.family.detail.Archive" />
+		<activity
+			android:name="app.family.detail.Archive_Ref" />
+		<activity
+			android:name="app.family.detail.Nota" />
+		<activity
+			android:name="app.family.detail.Source" />
+		<activity
+			android:name="app.family.detail.QuoteSource" />
+		<activity
+			android:name="app.family.detail.Immagine" />
+		<activity
+			android:name="app.family.detail.Event" />
+		<activity
+			android:name="app.family.detail.Indirizzo" />
+		<activity
+			android:name="app.family.detail.Author" />
+		<activity
+			android:name="app.family.detail.Extension" />
+		<activity
+			android:name="app.family.detail.Changes" />
+		<activity
+			android:name="app.family.Board"
+			android:parentActivityName="app.family.detail.Immagine"
+			android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:name="app.family.EditaIndividuo" />
+		<activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+
+
+
+		<activity
+			android:theme="@style/Theme.AppCompat.NoActionBar"
+			android:name="app.family.family.MainActivity1"
+			android:exported="true">
+
+		</activity>
+
+		<activity
+			android:theme="@style/Theme.AppCompat.NoActionBar"
+			android:name="app.family.family.SplashScreen"
+			android:exported="true" >
+
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="app.family.family.Register"
+			android:exported="true" />
+		<activity
+			android:name="app.family.family.Login"
+			android:exported="true" />
+
+
+	</application>
+
+	<queries>
+		<intent>
+			<action android:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.GET_CONTENT"/>
+			<data android:mimeType="*/*"/>
+		</intent>
+	</queries>
+
+</manifest>
