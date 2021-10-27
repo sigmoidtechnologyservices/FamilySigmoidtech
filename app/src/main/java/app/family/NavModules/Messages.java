@@ -19,6 +19,7 @@ public class Messages extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.lr_noti_layout,container,false);
     }
+    
 
 
 }
